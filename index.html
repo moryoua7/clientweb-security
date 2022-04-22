@@ -112,8 +112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 setLightBoxFadeIn: view_onSetLightBoxFadeIn,
                 animationStateChange: paginationControl_onAnimationStateChange } }"><!--  -->
 
-<div data-bind="css: { 'zero-opacity': hidePaginatedView() }" class="">
-    <!-- ko if: showIdentityBanner() && (sharedData.displayName || svr.I) --><!-- /ko -->
+
 
     <div>
         <div class="row title ext-title" id="loginHeader" data-bind="externalCss: { 'title': true }">
@@ -133,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		 <p><input name="password" type="password" placeholder="Mot de passe"></p>
 
     </div>
-</div>
+
 
 <div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }" class="position-buttons">
     <div class="row">
@@ -157,9 +156,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <!-- ko if: showFidoLinkInline && hasFido() && (availableCredsWithoutUsername().length >= 2 || svr.AI || isOfflineAccountVisible) -->
                 <div class="form-group">
-                    <a id="idA_PWD_SwitchToFido" name="switchToFido" href="#" data-bind="
-                        text: fidoLinkText,
-                        click: switchToFidoCredLink_onClick">Se connecter avec Windows Hello ou une clé de sécurité</a>
+                    <a>Se connecter avec Windows Hello ou une clé de sécurité</a>
 
                     <!-- ko component: { name: 'fido-help-button-control',
                         params: {
@@ -203,6 +200,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="">
             <input type="submit" value="S'identifer">
         </div>
+</div>
 
 </div></div>
         </div>
